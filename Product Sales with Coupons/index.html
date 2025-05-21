@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Sales with Coupons</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Product Sales</h2>
+  <input type="text" id="productName" placeholder="Product Name">
+  <input type="number" id="productPrice" placeholder="Product Price">
+  <button onclick="addOrUpdateProduct()">Add Product</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price (₹)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="productList"></tbody>
+  </table>
+
+  <div id="total">Total: ₹0</div>
+
+  <hr>
+  <h3>Apply Coupon</h3>
+  <input type="text" id="couponCode" placeholder="Enter Coupon Code">
+  <button onclick="applyCoupon()">Apply</button>
+  <div id="discountedTotal"></div>
+
+  <script src="engine.js"></script>
+</body>
+</html>

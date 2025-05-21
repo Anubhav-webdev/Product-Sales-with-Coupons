@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+     font-family: 'Arial', sans-serif;
+     padding: 20px;
+     background: #f9f9f9;
+     color: #333;
+     line-height: 1.6;
+   }
+   
+   h2, h3 {
+     color: #444;
+     text-align: center;
+   }
+   
+   input, button {
+     padding: 10px;
+     margin: 5px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-size: 16px;
+   }
+   
+   input:focus {
+     outline: none;
+     border-color: #007bff;
+     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+   }
+   
+   button {
+     background: #007bff;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     transition: background 0.3s ease;
+   }
+   
+   button:hover {
+     background: #0056b3;
+   }
+   
+   /* Table Styles */
+   table {
+     margin-top: 20px;
+     width: 100%;
+     border-collapse: collapse;
+     background: #fff;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   }
+   
+   th, td {
+     border: 1px solid #ddd;
+     padding: 12px;
+     text-align: center;
+   }
+   
+   th {
+     background: #007bff;
+     color: #fff;
+   }
+   
+   tr:nth-child(even) {
+     background: #f2f2f2;
+   }
+   
+   tr:hover {
+     background: #e9f5ff;
+   }
+   
+   /* Total and Discounted Total */
+   #total, #discountedTotal {
+     font-weight: bold;
+     margin-top: 15px;
+     text-align: center;
+     font-size: 18px;
+     color: #007bff;
+   }
+   
+   /* Action Buttons */
+   .action-btn {
+     padding: 6px 12px;
+     margin: 2px;
+     border: none;
+     border-radius: 3px;
+     font-size: 14px;
+     cursor: pointer;
+     transition: background 0.3s ease, color 0.3s ease;
+   }
+   
+   .action-btn:hover {
+     background: #0056b3;
+     color: #fff;
+   }
+   
+   .action-btn:first-child {
+     background: #28a745;
+     color: #fff;
+   }
+   
+   .action-btn:first-child:hover {
+     background: #218838;
+   }
+   
+   .action-btn:last-child {
+     background: #dc3545;
+     color: #fff;
+   }
+   
+   .action-btn:last-child:hover {
+     background: #c82333;
+   }
+   
+   /* Responsive Design */
+   @media (max-width: 768px) {
+     body {
+       padding: 10px;
+     }
+   
+     table {
+       font-size: 14px;
+     }
+   
+     input, button {
+       font-size: 14px;
+       padding: 8px;
+     }
+   
+     #total, #discountedTotal {
+       font-size: 16px;
+     }
+   }
